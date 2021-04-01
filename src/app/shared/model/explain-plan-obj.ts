@@ -37,6 +37,17 @@ interface PurpleAttribute {
   "Hash-Batches"?: string;
   "Original-Hash-Batches"?: string;
   "Peak-Memory-Usage"?: string;
+	"Group-Key"?: string;
+	"Sort-Key"?:string;
+	"Filter"?:string;
+	"Scan-Direction"?:string;
+	"Index-Cond"?:string;
+	"Index-Name"?:string;
+	"Strategy"?:string;
+	"Partial-Mode"?:string;
+	"Subplan-Name"?:string;
+	"Recheck-Cond"?:string;
+	"Join-Filter"?:string;
 }
 
 export { ExplainPlanObj, Root, PurpleAttribute };

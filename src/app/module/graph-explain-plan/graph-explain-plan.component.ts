@@ -102,6 +102,39 @@ export class GraphExplainPlanComponent implements OnInit {
     if (plu["Peak-Memory-Usage"]) {
       a.innerHTML += `</br>Peak-Memory-Usage:${plu["Peak-Memory-Usage"]}`;
     }
+    if (plu["Group-Key"]) {
+      a.innerHTML += `</br>Group-Key:${plu["Group-Key"]}`;
+    }
+    if (plu["Sort-Key"]) {
+      a.innerHTML += `</br>Sort-Key:${plu["Sort-Key"]}`;
+    }
+    if (plu["Filter"]) {
+      a.innerHTML += `</br>Filter:${plu["Filter"]}`;
+    }
+    if (plu["Scan-Direction"]) {
+      a.innerHTML += `</br>Scan-Direction:${plu["Scan-Direction"]}`;
+    }
+    if (plu["Index-Cond"]) {
+      a.innerHTML += `</br>Index-Cond:${plu["Index-Cond"]}`;
+    }
+    if (plu["Index-Name"]) {
+      a.innerHTML += `</br>Index-Name:${plu["Index-Name"]}`;
+    }
+    if (plu["Strategy"]) {
+      a.innerHTML += `</br>Strategy:${plu["Strategy"]}`;
+    }
+    if (plu["Partial-Mode"]) {
+      a.innerHTML += `</br>Partial-Mode:${plu["Partial-Mode"]}`;
+    }
+    if (plu["Subplan-Name"]) {
+      a.innerHTML += `</br>Subplan-Name:${plu["Subplan-Name"]}`;
+    }
+    if (plu["Recheck-Cond"]) {
+      a.innerHTML += `</br>Recheck-Cond:${plu["Recheck-Cond"]}`;
+    }
+    if (plu["Join-Filter"]) {
+      a.innerHTML += `</br>Join-Filter:${plu["Join-Filter"]}`;
+    }
     li.appendChild(a);
     if (objeto.child) {
       console.log(objeto.child);

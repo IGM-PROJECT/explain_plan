@@ -1,5 +1,9 @@
 /*Now the CSS*/
 * {margin: 0; padding: 0;}
+.tree{
+	overflow: auto;
+	width: max-content;
+}
 
 .tree ul {
 	padding-top: 20px; position: relative;
