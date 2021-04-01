@@ -1,0 +1,7 @@
+
+  <app-card [explain_child]=explain_child></app-card>
+  <ul *ngIf="explain_child.child">
+    <li *ngFor="let item of explain_child.child">
+      <app-display-tree [explain_child]=item ></app-display-tree>
+    </li>
+  </ul>
