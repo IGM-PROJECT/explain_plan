@@ -1,5 +1,4 @@
 :host{
-  
 	border: 1px solid #ccc;
 	padding: 5px 10px;
 	text-decoration: none;
@@ -15,4 +14,8 @@
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
+}
+
+:host(.someClass) {
+  background-color: red;
 }
