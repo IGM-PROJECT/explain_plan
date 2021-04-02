@@ -1,1 +1,34 @@
-<a>card works!</a>
+<div class="content">
+  <p *ngIf="plu['name']">name:{{plu["name"]}}</p>
+  <p>{{(plu["Startup-Cost"])}}-{{(plu["Total-Cost"])}} ({{plu["costo"]}})</p>
+  <p>tipo:{{explain_child.kind}}/{{explain_child.type}}</p>
+  <p *ngIf="explain_child.cond">name:{{explain_child.cond}}</p>
+  <p *ngIf="plu['Join-Type']">Join-Type:{{plu['Join-Type']}}</p>
+  <p *ngIf="plu['Alias']">Alias:{{plu['Alias']}}</p>
+  <p *ngIf="plu['Parent-Relationship']">Parent-Relationship:{{plu['Parent-Relationship']}}</p>
+  <p *ngIf="plu['Parallel-Aware']">Parallel-Aware:{{plu['Parallel-Aware']}}</p>
+  <p *ngIf="plu['Plan-Rows']">Plan-Rows:{{plu['Plan-Rows']}}</p>
+  <p *ngIf="plu['Plan-Width']">Plan-Width:{{plu['Plan-Width']}}</p>
+  <p *ngIf="plu['Inner-Unique']">Inner-Unique:{{plu['Inner-Unique']}}</p>
+  <p *ngIf="plu['Hash-Cond']">Hash-Cond:{{plu['Hash-Cond']}}</p>
+  <p *ngIf="plu['Actual-Startup-Time']">Actual-Startup-Time:{{plu['Actual-Startup-Time']}}</p>
+  <p *ngIf="plu['Actual-Total-Time']">Actual-Total-Time:{{plu['Actual-Total-Time']}}</p>
+  <p *ngIf="plu['Actual-Rows']">Actual-Rows:{{plu['Actual-Rows']}}</p>
+  <p *ngIf="plu['Actual-Loops']">Actual-Loops:{{plu['Actual-Loops']}}</p>
+  <p *ngIf="plu['Hash-Buckets']">Hash-Buckets:{{plu['Hash-Buckets']}}</p>
+  <p *ngIf="plu['Original-Hash-Buckets']">Original-Hash-Buckets:{{plu['Original-Hash-Buckets']}}</p>
+  <p *ngIf="plu['Hash-Batches']">Hash-Batches:{{plu['Hash-Batches']}}</p>
+  <p *ngIf="plu['Original-Hash-Batches']">Original-Hash-Batches:{{plu['Original-Hash-Batches']}}</p>
+  <p *ngIf="plu['Peak-Memory-Usage']">Peak-Memory-Usage:{{plu['Peak-Memory-Usage']}}</p>
+  <p *ngIf="plu['Group-Key']">Group-Key:{{plu['Group-Key']}}</p>
+  <p *ngIf="plu['Sort-Key']">Sort-Key:{{plu['Sort-Key']}}</p>
+  <p *ngIf="plu['Filter']">Filter:{{plu['Filter']}}</p>
+  <p *ngIf="plu['Scan-Direction']">Scan-Direction:{{plu['Scan-Direction']}}</p>
+  <p *ngIf="plu['Index-Cond']">Index-Cond:{{plu['Index-Cond']}}</p>
+  <p *ngIf="plu['Index-Name']">Index-Name:{{plu['Index-Name']}}</p>
+  <p *ngIf="plu['Strategy']">Strategy:{{plu['Strategy']}}</p>
+  <p *ngIf="plu['Partial-Mode']">Partial-Mode:{{plu['Partial-Mode']}}</p>
+  <p *ngIf="plu['Subplan-Name']">Subplan-Name:{{plu['Subplan-Name']}}</p>
+  <p *ngIf="plu['Recheck-Cond']">Recheck-Cond:{{plu['Recheck-Cond']}}</p>
+  <p *ngIf="plu['Join-Filter']">Join-Filter:{{plu['Join-Filter']}}</p>
+</div>
