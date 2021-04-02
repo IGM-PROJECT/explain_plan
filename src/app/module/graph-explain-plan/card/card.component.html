@@ -1,8 +1,8 @@
-<div class="content">
+
   <p *ngIf="plu['name']">name:{{plu["name"]}}</p>
   <p>{{(plu["Startup-Cost"])}}-{{(plu["Total-Cost"])}} ({{plu["costo"]}})</p>
   <p>tipo:{{explain_child.kind}}/{{explain_child.type}}</p>
-  <p *ngIf="explain_child.cond">name:{{explain_child.cond}}</p>
+  <p *ngIf="explain_child.cond">condition:{{explain_child.cond}}</p>
   <p *ngIf="plu['Join-Type']">Join-Type:{{plu['Join-Type']}}</p>
   <p *ngIf="plu['Alias']">Alias:{{plu['Alias']}}</p>
   <p *ngIf="plu['Parent-Relationship']">Parent-Relationship:{{plu['Parent-Relationship']}}</p>
@@ -20,8 +20,12 @@
   <p *ngIf="plu['Hash-Batches']">Hash-Batches:{{plu['Hash-Batches']}}</p>
   <p *ngIf="plu['Original-Hash-Batches']">Original-Hash-Batches:{{plu['Original-Hash-Batches']}}</p>
   <p *ngIf="plu['Peak-Memory-Usage']">Peak-Memory-Usage:{{plu['Peak-Memory-Usage']}}</p>
-  <p *ngIf="plu['Group-Key']">Group-Key:{{plu['Group-Key']}}</p>
-  <p *ngIf="plu['Sort-Key']">Sort-Key:{{plu['Sort-Key']}}</p>
+  <p *ngIf="plu['Group-Key']">Group-Key:
+    <textarea disabled>{{plu['Group-Key']}}</textarea>
+</p>
+  <p *ngIf="plu['Sort-Key']">Sort-Key:
+    <textarea disabled>{{plu['Sort-Key']}}</textarea>
+  </p>
   <p *ngIf="plu['Filter']">Filter:{{plu['Filter']}}</p>
   <p *ngIf="plu['Scan-Direction']">Scan-Direction:{{plu['Scan-Direction']}}</p>
   <p *ngIf="plu['Index-Cond']">Index-Cond:{{plu['Index-Cond']}}</p>
@@ -31,4 +35,4 @@
   <p *ngIf="plu['Subplan-Name']">Subplan-Name:{{plu['Subplan-Name']}}</p>
   <p *ngIf="plu['Recheck-Cond']">Recheck-Cond:{{plu['Recheck-Cond']}}</p>
   <p *ngIf="plu['Join-Filter']">Join-Filter:{{plu['Join-Filter']}}</p>
-</div>
+
