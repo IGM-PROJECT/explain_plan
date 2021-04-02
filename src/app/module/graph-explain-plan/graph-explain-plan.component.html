@@ -2,9 +2,13 @@
 We will create a family tree using just CSS(3)
 The markup will be simple nested lists
 -->
-SQL: <textarea disabled>
-	{{explain_pla.sql}}
-</textarea>
-<div id="tree" class="tree">
+file:<input type="file" id="filedbplane" (change)="cargarArchivo($event)">
+<br><input type="button" value="clear" (click)="clearData()"/>
+<div *ngIf="explain_pla">
+	SQL: <textarea disabled>
+		{{explain_pla.sql}}
+	</textarea>
+	<div id="tree" class="tree">
 		<app-display-tree [explain_child]=explain_pla.root[0] ></app-display-tree>
+	</div>
 </div>
