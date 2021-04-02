@@ -1,11 +1,12 @@
 <p *ngIf="explain_child['name']">name:{{explain_child["name"]}}</p>
-<p>{{(plu["Startup-Cost"])}}-{{(plu["Total-Cost"])}} ({{plu["costo"]}})</p>
+<p>{{(plu["Startup-Cost"])}}-{{(plu["Total-Cost"])}} --> ({{plu["costo"]}})</p>
 <p>tipo:{{explain_child.kind}}/{{explain_child.type}}</p>
 <p *ngIf="explain_child.cond">condition:{{explain_child.cond}}</p>
 <p *ngIf="plu['Join-Type']">Join-Type:{{plu['Join-Type']}}</p>
 <p *ngIf="plu['Alias']">Alias:{{plu['Alias']}}</p>
 <p *ngIf="plu['Parent-Relationship']">Parent-Relationship:{{plu['Parent-Relationship']}}</p>
 <p *ngIf="plu['Parallel-Aware']">Parallel-Aware:{{plu['Parallel-Aware']}}</p>
+<p *ngIf="plu['Relation-Name']">Relation-Name:{{plu['Relation-Name']}}</p>
 <p *ngIf="plu['Plan-Rows']">Plan-Rows:{{plu['Plan-Rows']}}</p>
 <p *ngIf="plu['Plan-Width']">Plan-Width:{{plu['Plan-Width']}}</p>
 <p *ngIf="plu['Inner-Unique']">Inner-Unique:{{plu['Inner-Unique']}}</p>
@@ -34,3 +35,4 @@
 <p *ngIf="plu['Subplan-Name']">Subplan-Name:{{plu['Subplan-Name']}}</p>
 <p *ngIf="plu['Recheck-Cond']">Recheck-Cond:{{plu['Recheck-Cond']}}</p>
 <p *ngIf="plu['Join-Filter']">Join-Filter:{{plu['Join-Filter']}}</p>
+<p *ngIf="plu['Rows-Removed-by-Filter']">Rows-Removed-by-Filter:{{plu['Rows-Removed-by-Filter']}}</p>

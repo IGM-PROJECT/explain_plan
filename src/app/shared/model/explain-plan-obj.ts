@@ -48,6 +48,7 @@ interface PurpleAttribute {
 	"Subplan-Name"?:string;
 	"Recheck-Cond"?:string;
 	"Join-Filter"?:string;
+  "Rows-Removed-by-Filter"?:string;
 }
 
 export { ExplainPlanObj, Root, PurpleAttribute };
